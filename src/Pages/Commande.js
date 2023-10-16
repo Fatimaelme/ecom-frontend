@@ -17,7 +17,7 @@ const Commande = () => {
   const navigate = useNavigate()
 
   const addcommade = async() =>{
-    await axios.post('http://localhost:3000/commande',{
+    await axios.post('https://ecomserver-o1sk.onrender.com/commande',{
       nom,
       prenom,
       telephone,

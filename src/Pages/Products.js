@@ -11,7 +11,7 @@ const Products = () => {
     console.log(params)
 
     const addproduct = async() =>{
-        const result = await axios.get('http://localhost:3000/product')
+        const result = await axios.get('https://ecomserver-o1sk.onrender.com/product')
         setProd(result.data.filter(a => a.category.toLowerCase() === params.category.toLowerCase()))
     }
     const dispatch = useDispatch()

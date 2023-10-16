@@ -13,7 +13,7 @@ const Navbar = () => {
    
 
     const getCategories = async () => {
-        const res = await axios.get('http://localhost:3000/category')
+        const res = await axios.get('https://ecomserver-o1sk.onrender.com/category')
         setCats(res.data)
         console.log(res)
     }
